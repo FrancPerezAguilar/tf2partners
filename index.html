@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socios | TOFRANDOS S.L.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/path/to/dist/pocketbase.umd.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">
+                    <img src="assets\logo_favicon.jpg" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    Portal de colaboradors
+                </a>
+            </div>
+        </nav>
+        <h2 class="my-4">👋 Hola, partner_displayname</h2>
+        <div class="row">
+            <div class="col p-2">
+                <form name="contact">
+                    <h3>Formulari de contacte</h3>
+                    <p>Omple aquest formulari per crear una notificació a TOFRANDOS d'un nou client referit per la teva
+                        part.</p>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="input1">
+                        <label for="formGroup1">Nom i Cognoms</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="input2">
+                        <label for="formGroup2">Adreça i Població</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <input type="text" class="form-control" id="input3">
+                        <label for="formGroup3">Teléfon de contacte</label>
+                    </div>
+                    <div class="mb-3 form-floating">
+                        <textarea class="form-control" id="input4" style="height: 100px"></textarea>
+                        <label for="formGroup4">Descripció de les necessitats del client</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+            <div class="col-8">
+                <h3>Llistat de clients referits</h3>
+                <p>A la taula es mostren tots els clients referits per tu, i el seu estat.</p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    const pb = new PocketBase("https://pb.p3n.cat");
+</script>
+
+</html>
